@@ -1,0 +1,22 @@
+.block-hero {
+  margin: rem(40) 0;
+
+  @include media(">=lg") {
+    margin: rem(80) 0;
+  }
+
+  &__image {
+    max-width: rem(320);
+    display: block;
+    margin: 0 auto rem(30) auto;
+
+    @include media(">=lg") {
+      max-width: rem(520);
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

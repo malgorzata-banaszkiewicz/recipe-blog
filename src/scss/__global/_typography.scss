@@ -1,0 +1,7 @@
+h1 {
+  @include font(30, 34);
+
+  @include media(">=lg") {
+    @include font(50, 56);
+  }
+}
