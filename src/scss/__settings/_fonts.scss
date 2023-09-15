@@ -3,12 +3,15 @@
 FONTS
 */
 
-$font-base: "Roboto Mono", monospace;
-$font-montserrat: "Montserrat", sans-serif;
-$font-size-base: rem(16);
-$line-height-base: rem(28);
+//base values
+$font-base: "Montserrat", sans-serif;
+$font-size-base: rem(12);
+$line-height-base: rem(15);
 
 // font weights
 $font-weight-base: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
+
+//families
+$font-playfair-display: "Playfair Display", serif;

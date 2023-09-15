@@ -1,0 +1,63 @@
+.block-preparation__time {
+	&-summary {
+		margin-bottom: rem(32);
+		@include media(">=lg") {
+			box-shadow: rem(5) rem(5) rem(30) $color-silver;
+			border-radius: rem(12);
+			padding: rem(50);
+			width: rem(250);
+		}
+	}
+	&-servings {
+		display: flex;
+		gap: 2%;
+		@include media(">=lg") {
+			gap: rem(15);
+			margin-bottom: rem(30);
+		}
+		&--essence {
+			color: $color-jaffa;
+			@include font(12, 12);
+			@include media(">=lg") {
+				@include font(14, 17);
+			}
+		}
+	}
+	&-icons {
+		width: rem(17);
+		height: rem(17);
+		@include media(">=lg") {
+			width: rem(34);
+			height: rem(34);
+		}
+	}
+	&-estimations {
+		display: flex;
+		@include media(">=lg") {
+			flex-direction: column;
+		}
+	}
+	&-est {
+		display: flex;
+		flex-basis: 33.33%;
+		max-width: 33.33%;
+		gap: 5%;
+		align-items: center;
+		@include media(">=lg") {
+			margin-bottom: rem(30);
+			gap: rem(15);
+			flex-basis: auto;
+			max-width: fit-content;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	&-values {
+		@include font(10, 12);
+		color: $color-mine-shaft;
+		@include media(">=lg") {
+			@include font(14, 17);
+		}
+	}
+}

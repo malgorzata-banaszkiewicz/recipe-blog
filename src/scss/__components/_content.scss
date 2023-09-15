@@ -1,0 +1,9 @@
+.block-preparation {
+	&__content {
+		@include media(">=xl") {
+			display: flex;
+			flex-direction: row-reverse;
+			gap: 20%;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.block-preparation__recipe {
+	&-steps {
+		list-style-type: none;
+		padding-left: 0;
+		counter-reset: recipe;
+	}
+	&-step {
+		@include font(16, 20);
+		display: flex;
+		gap: 5%;
+		margin-bottom: rem(25);
+		&::before {
+			counter-increment: recipe;
+			content: counter(recipe);
+			color: $color-white;
+			background-color: $color-jaffa;
+			@include font(24, 32);
+			font-family: $font-playfair-display;
+			border-radius: rem(6);
+			display: flex;
+			align-items: baseline;
+			justify-content: center;
+			width: rem(36);
+			height: rem(36);
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@include media(">=lg") {
+			gap: 2%;
+		}
+	}
+	&-text {
+		flex-basis: 85%;
+		max-width: 85%;
+	}
+	&-paragraph {
+		color: $color-black;
+		&--important {
+			color: $color-mine-shaft;
+		}
+	}
+	&-essence {
+		font-weight: $font-weight-bold;
+		color: $color-black;
+	}
+	&-credits {
+		font-style: italic;
+		color: $color-silver;
+		margin-top: rem(26);
+		@include font(12, 18);
+		margin-bottom: rem(129);
+		@include media(">=lg") {
+			margin-top: rem(57);
+		}
+	}
+	&-source {
+		color: $color-silver;
+		display: inline-block;
+	}
+	&-link {
+		display: inline-block;
+		transition: color $default-transition;
+		&:hover {
+			color: $color-black;
+		}
+	}
+}

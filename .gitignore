@@ -1,0 +1,11 @@
+# Dependencies
+/node_modules
+
+# Compiled assets
+dist
+
+# No OS-specific garbage
+*~
+.DS_Store
+Thumbs.db
+thumbs.db

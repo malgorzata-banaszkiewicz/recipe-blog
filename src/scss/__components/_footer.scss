@@ -1,24 +1,22 @@
 .main-footer {
-  margin: rem(20) 0;
-  font-family: $font-montserrat;
+	margin: rem(20) 0;
+	color: $color-gray;
+	@include media(">=lg") {
+		margin: rem(40) 0;
+	}
 
-  @include media(">=lg") {
-    margin: rem(40) 0;
-  }
+	&__owner {
+		color: $color-silver;
+		@include font(14, 17);
+		text-align: center;
+	}
 
-  &__owner {
-    color: $color-silver;
-    @include font(14, 17);
-    text-align: center;
-  }
+	&__owner-name {
+		font-weight: $font-weight-bold;
+		transition: color $default-transition;
 
-  &__owner-name {
-    font-weight: $font-weight-bold;
-    color: $color-silver;
-    transition: $default-transition;
-
-    &:hover {
-      color: $color-black;
-    }
-  }
+		&:hover {
+			color: $color-black;
+		}
+	}
 }

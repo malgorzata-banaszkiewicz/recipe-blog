@@ -1,18 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<title>HTML, SCSS and JS Starter</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8" />
+		<title>Recipe blog</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
 	</head>
 	<body>
+		<header></header>
 		<main>
-			<section class="block-hero">
+			<section class="block block-hero">
 				<div class="container">
+					<h1>Classic Cheesecake Recipe</h1>
+					<div class="block-hero__paragraph">
+						<figure class="block-hero__icon">
+							<img
+								src="./images/icons/6dots.svg"
+								alt="dots"
+								class="block-hero__dots" />
+						</figure>
+						<p class="block-hero__text">
+							Look no further for a creamy and ultra smooth classic cheesecake
+							recipe! Paired with a buttery graham cracker crust, no one can
+							deny its simple decadence. For the best results, bake in a water
+							bath.
+						</p>
+					</div>
 					<figure class="block-hero__image">
-						<img src="images/home/dinosaurs.png" alt="dinosaurs">
+						<img
+							src="./images/home/photo1.png"
+							alt="white cheescake with berries on top on a brown plate with a golden fork"
+							class="block-hero__img" />
 					</figure>
-					<h1 class="block-hero__title">HTML, SCSS and JS Starter</h1>
+				</div>
+			</section>
+			<section class="block block-preparation">
+				<div class="container">
+					<div class="block-preparation__content">
+						<div>
+							<div class="block-preparation__time">
+								<div class="block-preparation__time-summary">
+									<div class="block-preparation__time-servings">
+										<figure>
+											<img
+												src="./images/icons/restaurant-3-256.png"
+												alt="knife and fork"
+												class="block-preparation__time-icons" />
+										</figure>
+										<div>
+											<h4>Yields</h4>
+											<p class="block-preparation__time-servings--essence">
+												12 servings
+											</p>
+										</div>
+									</div>
+									<div class="block-preparation__time-estimations">
+										<article class="block-preparation__time-est">
+											<figure>
+												<img
+													src="./images/icons/clock-3-256.png"
+													alt="clock"
+													class="block-preparation__time-icons" />
+											</figure>
+											<div>
+												<h4>Prep Time</h4>
+												<p class="block-preparation__time-values">45 minutes</p>
+											</div>
+										</article>
+										<article class="block-preparation__time-est">
+											<figure>
+												<img
+													src="./images/icons/clock-3-256.png"
+													alt="clock"
+													class="block-preparation__time-icons" />
+											</figure>
+											<div>
+												<h4>Cook Time</h4>
+												<p class="block-preparation__time-values">1 hour</p>
+											</div>
+										</article>
+										<article class="block-preparation__time-est">
+											<figure>
+												<img
+													src="./images/icons/clock-3-256.png"
+													alt="clock"
+													class="block-preparation__time-icons" />
+											</figure>
+											<div class="est__time">
+												<h4>Total Time</h4>
+												<p class="block-preparation__time-values">1,45 hours</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="block-preparation__ingredients">
+								<h2>Ingredients</h2>
+								<article class="block-preparation__ingredients-part">
+									<h3>Graham Cracker Crust</h3>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cracker1"
+											name="cracker1"
+											value="crumbs"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cracker1"
+											class="block-preparation__ingredients-label"
+											>1 and 1/2 cups (150g)
+											<span class="block-preparation__ingredients-essence"
+												>graham cracker crumbs </span
+											>(about 10 full sheet graham crackers)
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cracker2"
+											name="cracker2"
+											value="butter"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cracker2"
+											class="block-preparation__ingredients-label"
+											>5 Tablespoons (70g)
+											<span class="block-preparation__ingredients-essence"
+												>unsalted butter</span
+											>, melted
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cracker3"
+											name="cracker3"
+											value="sugar"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cracker3"
+											class="block-preparation__ingredients-label"
+											>1/4 cup (50g)
+											<span class="block-preparation__ingredients-essence"
+												>granulated sugar</span
+											>
+										</label>
+									</div>
+								</article>
+								<article class="block-preparation__ingredients-part">
+									<h3>Cheesecake</h3>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake1"
+											name="cheesecake1"
+											value="cheese"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake1"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>four 8-ounce blocks (904g) full-fat
+											<span
+												class="block-preparation__ingredients-essence block-preparation__ingredients-essence--lighter"
+												>cream cheese</span
+											>, softened to room temperature
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake2"
+											name="cheesecake2"
+											value="sugar"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake2"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>1 cup (200g)
+											<span
+												class="block-preparation__ingredients-essence block-preparation__ingredients-essence--lighter"
+												>granulated sugar</span
+											>
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake3"
+											name="cheesecake3"
+											value="cream"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake3"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>1 cup (240g) full-fat
+											<span
+												class="block-preparation__ingredients-essence block-preparation__ingredients-essence--lighter"
+												>sour cream</span
+											>, at room temperature
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake4"
+											name="cheesecake4"
+											value="vanilla"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake4"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>1 teaspoon
+											<span
+												class="block-preparation__ingredients-essence block-preparation__ingredients-essence--lighter"
+												>pure vanilla extract</span
+											>
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake5"
+											name="cheesecake5"
+											value="juice"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake5"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>2 teaspoons
+											<span
+												class="block-preparation__ingredients-essence block-preparation__ingredients-essence--lighter"
+												>fresh lemon juice</span
+											>
+											(optional, but recommended)
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake6"
+											name="cheesecake6"
+											value="eggs"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake6"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>3 large
+											<span
+												class="block-preparation__ingredients-essence block-preparation__ingredients-essence--lighter"
+												>eggs</span
+											>, at room temperature
+										</label>
+									</div>
+									<div class="block-preparation__ingredients-ingredient">
+										<input
+											type="checkbox"
+											id="cheesecake7"
+											name="cheesecake7"
+											value="topping"
+											class="block-preparation__ingredients-checkbox" />
+										<label
+											for="cheesecake7"
+											class="block-preparation__ingredients-label block-preparation__ingredients-label--lighter"
+											>topping suggestions:
+											<span class="block-preparation__ingredients-optional"
+												>salted caramel, lemon curd, strawberry topping,
+												chocolate ganache, red wine chocolate ganache, fresh
+												fruit, whipped cream, or raspberry sauce (recipe in
+												notes)</span
+											>
+										</label>
+									</div>
+								</article>
+							</div>
+							<div class="block-preparation__recipe">
+								<h2>Instructions</h2>
+								<ol class="block-preparation__recipe-steps">
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph">
+												Adjust the oven rack to the lower-middle position and
+												preheat oven to 350°F (177°C).
+											</p>
+										</div>
+									</li>
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph--important">
+												<span class="block-preparation__recipe-essence"
+													>Make the crust:</span
+												>
+												Using a food processor, pulse the graham crackers into
+												crumbs. Pour into a medium bowl and stir in sugar and
+												melted butter until combined. (You can also pulse it all
+												together in the food processor.) Mixture will be sandy.
+												Press firmly into the bottom and slightly up the sides
+												of a 9-inch or 10-inch springform pan. No need to grease
+												the pan first. I use the bottom of a measuring cup to
+												pack the crust down tightly. Pre-bake for 8 minutes.
+												Remove from the oven and place the hot pan on a large
+												piece of aluminum foil. The foil will wrap around the
+												pan for the water bath in step 4. Allow crust to
+												slightly cool as you prepare the filling.
+											</p>
+										</div>
+									</li>
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph--important">
+												<span class="block-preparation__recipe-essence"
+													>Make the filling:</span
+												>
+												Using a handheld or stand mixer fitted with a paddle
+												attachment, beat the cream cheese and granulated sugar
+												together on medium-high speed in a large bowl until the
+												mixture is smooth and creamy, about 2 minutes. Add the
+												sour cream, vanilla extract, and lemon juice then beat
+												until fully combined. On medium speed, add the eggs one
+												at a time, beating after each addition until just
+												blended. After the final egg is incorporated into the
+												batter, stop mixing. To help prevent the cheesecake from
+												deflating and cracking as it cools, avoid over-mixing
+												the batter as best you can.
+											</p>
+										</div>
+									</li>
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph--important">
+												<span class="block-preparation__recipe-essence"
+													>Prepare the simple water bath (see note)</span
+												>
+												Boil a pot of water. You need 1 inch of water in your
+												roasting pan for the water bath, so make sure you boil
+												enough. I use an entire kettle of hot water. As the
+												water is heating up, wrap the aluminum foil around the
+												springform pan. Pour the cheesecake batter on top of the
+												crust. Use a rubber spatula or spoon to smooth it into
+												an even layer. Place the pan inside of a large roasting
+												pan. Carefully pour the hot water inside of the pan and
+												place in the oven. (Or you can place the roasting pan in
+												the oven first, then pour the hot water in. Whichever is
+												easier for you.)
+											</p>
+										</div>
+									</li>
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph">
+												Bake cheesecake for 55-70 minutes or until the center is
+												almost set. When it’s done, the center of the cheesecake
+												will slightly wobble if you gently shake the pan. Turn
+												the oven off and open the oven door slightly. Let the
+												cheesecake sit in the oven in the water bath as it cools
+												down for 1 hour. Remove from the oven and water bath,
+												then cool cheesecake completely at room temperature.
+												Then refrigerate the cheesecake for at least 4 hours or
+												overnight.
+											</p>
+										</div>
+									</li>
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph">
+												Use a knife to loosen the chilled cheesecake from the
+												rim of the springform pan, then remove the rim. Using a
+												clean sharp knife, cut into slices for serving. For neat
+												slices, wipe the knife clean and dip into warm water
+												between each slice.
+											</p>
+										</div>
+									</li>
+									<li class="block-preparation__recipe-step">
+										<div class="block-preparation__recipe-text">
+											<p class="block-preparation__recipe-paragraph">
+												Serve cheesecake with desired toppings. Cover and store
+												leftover cheesecake in the refrigerator for up to 5
+												days.
+											</p>
+										</div>
+									</li>
+								</ol>
+								<div class="block-preparation__recipe-credits">
+									<p class="block-preparation__recipe-source">
+										Source:
+										<a
+											href="#"
+											class="block-preparation__recipe-link"
+											target="_blank"
+											>https://sallysbakingaddiction.com/classic-cheesecake/</a
+										>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

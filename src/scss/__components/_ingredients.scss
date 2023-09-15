@@ -1,0 +1,38 @@
+.block-preparation__ingredients {
+	&-part {
+		margin-bottom: rem(32);
+	}
+	&-ingredient {
+		display: flex;
+		gap: 2%;
+	}
+	&-checkbox {
+		border: none;
+		width: rem(21);
+		height: rem(21);
+		cursor: pointer;
+		border: rem(1) solid $color-gray;
+		border-radius: rem(2);
+		max-width: 5%;
+	}
+
+	&-label {
+		color: $color-mine-shaft;
+		@include font(14, 25);
+		max-width: 93%;
+		&--lighter {
+			color: $color-gray;
+		}
+	}
+	&-essence {
+		font-weight: $font-weight-bold;
+		&--lighter {
+			color: $color-mine-shaft;
+		}
+	}
+	&-optional {
+		font-style: italic;
+		color: $color-mine-shaft;
+		font-weight: $font-weight-medium;
+	}
+}

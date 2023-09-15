@@ -1,22 +1,45 @@
 .block-hero {
-  margin: rem(40) 0;
-
-  @include media(">=lg") {
-    margin: rem(80) 0;
-  }
-
-  &__image {
-    max-width: rem(320);
-    display: block;
-    margin: 0 auto rem(30) auto;
-
-    @include media(">=lg") {
-      max-width: rem(520);
-    }
-  }
-
-  &__title {
-    text-transform: uppercase;
-    text-align: center;
-  }
+	&__paragraph {
+		display: flex;
+		gap: 2%;
+		align-items: baseline;
+		margin-bottom: rem(20);
+		@include media(">=lg") {
+			margin-bottom: rem(40);
+			flex-basis: 70%;
+			max-width: 70%;
+		}
+	}
+	&__icon {
+		display: flex;
+		flex-basis: 5%;
+		max-width: 5%;
+		@include media(">=lg") {
+			flex-basis: 2%;
+			max-width: 2%;
+		}
+	}
+	&__dots {
+		width: rem(13);
+		height: rem(8);
+	}
+	&__text {
+		display: flex;
+		flex-basis: 90%;
+		max-width: 90%;
+		font-style: italic;
+	}
+	&__image {
+		border-radius: rem(12);
+		padding-top: 44.3%;
+		position: relative;
+		overflow: hidden;
+	}
+	&__img {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		top: 0;
+	}
 }

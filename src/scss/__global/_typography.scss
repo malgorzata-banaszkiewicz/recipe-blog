@@ -1,7 +1,51 @@
 h1 {
-  @include font(30, 34);
+	@include font(24, 32);
+	font-family: $font-playfair-display;
+	font-weight: $font-weight-bold;
+	margin-bottom: rem(12);
+	@include media(">=lg") {
+		@include font(48, 64);
+	}
+}
 
-  @include media(">=lg") {
-    @include font(50, 56);
-  }
+h2 {
+	@include font(18, 24);
+	font-family: $font-playfair-display;
+	font-weight: $font-weight-bold;
+	margin-bottom: rem(14);
+	color: $color-mine-shaft;
+	@include media(">=lg") {
+		@include font(24, 32);
+		margin-bottom: rem(24);
+	}
+}
+
+h3 {
+	@include font(16, 21);
+	font-family: $font-playfair-display;
+	font-style: italic;
+	margin-bottom: rem(14);
+	color: $color-mine-shaft;
+	@include media(">=lg") {
+		@include font(18, 24);
+		margin-bottom: rem(24);
+	}
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: $font-weight-bold;
+	@include font(8, 10);
+	color: $color-silver;
+	@include media(">=lg") {
+		@include font(10, 12);
+	}
+}
+
+p {
+	font-weight: $font-weight-medium;
+	color: $color-emperor;
+	@include media(">=lg") {
+		font-size: rem(14);
+	}
 }

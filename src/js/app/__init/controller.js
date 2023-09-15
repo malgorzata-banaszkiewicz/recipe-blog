@@ -1,15 +1,11 @@
-import exampleFunction from '../__modules/example';
-
 // GLOBAL APP CONTROLLER
 const controller = {
-    init() {},
-    loaded() {
-        exampleFunction();
-    },
-    resized() {},
-    mouseUp(e) {},
+	init() {},
+	loaded() {},
+	resized() {},
+	mouseUp(e) {},
 	keyDown(e) {},
-    scrolled(e) {},
+	scrolled(e) {},
 };
 
 export default controller;
